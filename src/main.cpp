@@ -56,7 +56,6 @@ void loop() {
 
 		unsigned char* magicPacket = wake.getMagicPacket();
 
-		// Dont know why, but it cant send packet to specific interface IP, only to Broadcast IP. I did the same thing in an android application and it sent the same packet to specific IP.
 		IPAddress ip(192, 168, 0, 255);
 
 		// sending 
@@ -73,4 +72,3 @@ void loop() {
 
 	delay(1000);
 }
-
